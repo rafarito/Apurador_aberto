@@ -1,0 +1,25 @@
+# Ambiente virtual Python (esta pasta também é um venv)
+Include/
+Lib/
+Scripts/
+share/
+pyvenv.cfg
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Downloads do TSE
+cache_tse/
+*.part
+
+# Resultados gerados pela apuração e pelas consultas
+*.csv
+*.csv.gz
+*.parquet
+log_*.txt
+
+# Testes locais e rascunhos
+testes/
