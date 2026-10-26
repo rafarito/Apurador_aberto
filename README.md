@@ -29,8 +29,11 @@ Requer Python 3.10+. Crie um ambiente virtual, ative e instale as dependências:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install pandas requests duckdb
+python -m pip install -r requirements.txt
 ```
+
+O `requirements.txt` fixa as versões usadas na apuração de referência (Python 3.14.8,
+pandas 3.1.0, requests 2.34.2, duckdb 2.0.0), para que o resultado seja reproduzível.
 
 > Se o PowerShell bloquear o `Activate.ps1`, rode antes
 > `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, ou use `.\.venv\Scripts\python.exe`
